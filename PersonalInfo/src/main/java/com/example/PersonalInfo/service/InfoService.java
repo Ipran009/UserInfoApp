@@ -27,6 +27,8 @@ public class InfoService {
         infoResponse.setPhone(infoRequest.getPhone());
         infoResponse.setId(generateId(infoRequest.getFirstName(), infoRequest.getLastName(), infoRequest.getPhone()));
         return infoResponse;
+
+        
     }
 
     private static String generateId(String firstName, String lastName, int phone) {
